@@ -6,7 +6,9 @@ const achievementSchema = new mongoose.Schema({
     batch: { type: String, required: true },
     photoLink: { type: String },
     achievement: { type: String, required: true },
-    category: { type: String, required: true }
+    category: { type: String, required: true },
+    Linkdin_Profile: [{ type: String }],
+    Member_name: {type: String}
 });
 
 const Achievement = mongoose.model('Achievement', achievementSchema);
